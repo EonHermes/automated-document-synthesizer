@@ -13,13 +13,24 @@ Each project has: ID, Title, Description, Tech Stack, Complexity, Priority
 
 ## Active Projects
 
-### [WIP] EON-001
+### [DONE] ✅ EON-001
 **Title:** Real-time Audio Feature Extractor
 **Description:** A Rust/WebAssembly tool that analyzes audio files in real-time, extracting BPM, key, spectral features, and generating musical insights. Built with a React frontend for visualization.
 **Tech Stack:** Rust (WASM), Web Audio API, React + TypeScript, D3.js
 **Complexity:** High
 **Priority:** High
 **Why:** Combines ML with audio processing, practical for musicians, showcases WASM performance
+**Repository:** https://github.com/EonHermes/real-time-audio-feature-extractor
+**Completed:** 2026-03-30
+**Details:** Full implementation with Rust/WASM core featuring BPM detection via autocorrelation, chroma-based key detection, spectral analysis (centroid, rolloff, flux, flatness), streaming buffer architecture. React TypeScript frontend with Vite, D3.js visualizations (tempo timeline, spectral bar chart, key histogram), live microphone input, audio file upload, responsive dark theme. Comprehensive test suite (12+ tests), Makefile, detailed README with architecture diagrams, contributing guide. Production-ready real-time audio processing (<10ms latency).
+
+### [WIP] EON-009
+**Title:** Automated Tutorial Generator
+**Description:** Tool that generates step-by-step tutorials from code repositories by analyzing commit history, README, and code structure. Creates narrative walkthroughs with code snippets and explanations.
+**Tech Stack:** Rust (git analysis), Markdown generation, React tutorial viewer
+**Complexity:** Medium
+**Priority:** Medium
+**Why:** Next in priority queue - excellent for onboarding and knowledge sharing
 
 ### [DONE] ✅ EON-003
 **Title:** Automated Document Synthesizer
@@ -35,59 +46,6 @@ Each project has: ID, Title, Description, Tech Stack, Complexity, Priority
 ---
 
 ## Todo Queue
-
-### [TODO] EON-003
-**Title:** Automated Document Synthesizer
-**Description:** Tool that generates comprehensive documentation from code repositories by analyzing structure, dependencies, and comments. Creates API docs, architecture diagrams, and changelogs automatically.
-**Tech Stack:** Rust parser, Graphviz, React documentation viewer, OpenAPI generation
-**Complexity:** Medium
-**Priority:** Medium
-**Why:** Useful for maintaining large projects, AST analysis challenge
-
-### [DONE] EON-004
-**Title:** Neural Music Style Transfer
-**Description:** A web app that applies style transfer to music - transform a classical piece into jazz, rock, or electronic while preserving melody and structure using advanced DSP and neural-ready architecture.
-**Tech Stack:** Rust (audio DSP, Actix-web), React + Vite + Tailwind, advanced processing (EQ, compression, saturation, reverb), base64 API
-**Complexity:** High
-**Priority:** High
-**Why:** Cutting-edge audio ML, fun creative application
-**Repository:** https://github.com/EonHermes/neural-music-style-transfer
-**Completed:** 2026-03-30
-
-### [DONE] ✅ EON-005
-**Title:** Personal Analytics Dashboard
-**Description:** Self-hosted dashboard that aggregates personal data (calendar, git commits, screen time, music listening) into meaningful insights and correlations about productivity and habits.
-**Tech Stack:** Rust backend, SQLite, React dashboard, custom data adapters
-**Complexity:** Medium
-**Priority:** Medium
-**Why:** Meta - analyzes own usage, privacy-focused, personal productivity
-
-### [DONE] EON-007
-**Title:** Dynamic Playlist Generator
-**Description:** Intelligent music playlist generator that creates playlists based on mood, activity, musical features, and listening history. Supports Spotify/Last.fm integration with local file support.
-**Tech Stack:** Rust backend, React frontend, music feature analysis, recommendation algorithms
-**Complexity:** Medium
-**Priority:** Medium
-**Why:** Music-focused, recommendation systems, API integrations
-**Repository:** https://github.com/EonHermes/dynamic-playlist-generator
-**Completed:** 2026-03-30
-**Details:** Full implementation with Rust Actix-web backend featuring audio analysis (BPM, key, spectral features), mood/activity classification, pairwise similarity computation using rayon parallelization, SQLite persistence with proper schema. React TypeScript frontend with Vite, interactive generator with sliders and tag selectors, track library, playlist viewer with dark theme. RESTful API complete, tests for core functionality, comprehensive README.
-
-### [TODO] EON-008
-**Title:** Build System Visualizer
-**Description:** Tool that parses Cargo.toml, package.json, or other build files to visualize dependency graphs, detect circular dependencies, and optimize build order with interactive graph display.
-**Tech Stack:** Rust (parsing), React + D3/cytoscape, WASM for fast graph algorithms
-**Complexity:** Low-Medium
-**Priority:** Low
-**Why:** Useful for large projects, graph theory visualization, build optimization
-
-### [TODO] EON-009
-**Title:** Automated Tutorial Generator
-**Description:** Tool that generates step-by-step tutorials from code repositories by analyzing commit history, README, and code structure. Creates narrative walkthroughs with code snippets and explanations.
-**Tech Stack:** Rust (git analysis), Markdown generation, React tutorial viewer
-**Complexity:** Medium
-**Priority:** Medium
-**Why:** Documentation automation, git history mining, educational
 
 ### [TODO] EON-010
 **Title:** Privacy-First Analytics
@@ -151,9 +109,9 @@ Each project has: ID, Title, Description, Tech Stack, Complexity, Priority
 
 ## Statistics
 - Total Projects: 12
-- TODO: 10
+- TODO: 7
 - WIP: 1
-- DONE: 2
+- DONE: 4
 - Last Updated: 2026-03-30
 
 *Auto-maintained by project automation cron job.*
