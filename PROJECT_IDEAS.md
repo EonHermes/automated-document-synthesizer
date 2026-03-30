@@ -33,7 +33,7 @@ Each project has: ID, Title, Description, Tech Stack, Complexity, Priority
 **Priority:** Medium
 **Why:** Useful for maintaining large projects, AST analysis challenge
 
-### [TODO] EON-004
+### [WIP] EON-004
 **Title:** Neural Music Style Transfer
 **Description:** A web app that applies style transfer to music - transform a classical piece into jazz, rock, or electronic while preserving melody and structure using lightweight neural networks.
 **Tech Stack:** Rust (audio DSP), ONNX runtime, React waveforms, WebAudio
